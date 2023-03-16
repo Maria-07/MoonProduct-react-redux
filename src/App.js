@@ -1,14 +1,16 @@
 import "./App.css";
-import "./Custome-antd.css";
+import "./Custom-antd.css";
 import { RouterProvider } from "react-router-dom";
 import routes from "./Routes/routes";
-import ProductProvider from "./Context/ProductProvider";
+import { Provider } from "react-redux";
+import store from "./Redux/store";
 
 function App() {
   return (
     <div>
-      <ProductProvider></ProductProvider>
-      <RouterProvider router={routes} />
+      <Provider store={store}>
+        <RouterProvider router={routes} />
+      </Provider>
     </div>
   );
 }
