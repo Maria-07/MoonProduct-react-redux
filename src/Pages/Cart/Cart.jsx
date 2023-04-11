@@ -7,7 +7,7 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-4 md:grid-cols-2 gap-3 mx-16 my-10">
+      <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3 mx-16 my-10">
         {cart.map((product, i) => (
           <ProductCart product={product} key={i}></ProductCart>
         ))}

@@ -16,7 +16,7 @@ const Home = () => {
   console.log("state", state);
   return (
     <>
-      <div className="grid grid-cols-4 md:grid-cols-2 gap-3 mx-16 my-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-3 mx-16 my-10">
         {products.map((product, i) => (
           <ProductCart key={i} product={product}></ProductCart>
         ))}
